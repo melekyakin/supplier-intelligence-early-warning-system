@@ -1,0 +1,52 @@
+Dataset shape: (777, 11)
+
+Missing values:
+PO_ID                 0
+Supplier              0
+Order_Date            0
+Delivery_Date        87
+Item_Category         0
+Order_Status          0
+Quantity              0
+Unit_Price            0
+Negotiated_Price      0
+Defective_Units     136
+Compliance            0
+
+Order status:
+Order_Status
+Delivered              560
+Pending                 81
+Partially Delivered     73
+Cancelled               63
+
+Supplier:
+Supplier
+Delta_Logistics    171
+Epsilon_Group      166
+Beta_Supplies      156
+Gamma_Co           143
+Alpha_Inc          141
+
+Numeric summary:
+           PO_ID         Supplier                  Order_Date               Delivery_Date    Item_Category Order_Status     Quantity  Unit_Price  Negotiated_Price  Defective_Units Compliance
+count        777              777                         777                         690              777          777   777.000000  777.000000        777.000000       641.000000        777
+unique       777                5                         NaN                         NaN                5            4          NaN         NaN               NaN              NaN          2
+top     PO-00001  Delta_Logistics                         NaN                         NaN  Office Supplies    Delivered          NaN         NaN               NaN              NaN        Yes
+freq           1              171                         NaN                         NaN              174          560          NaN         NaN               NaN              NaN        640
+mean         NaN              NaN  2022-12-28 23:15:31.274131  2023-01-12 03:16:10.434782              NaN          NaN  1094.660232   58.283822         53.660721        74.803432        NaN
+min          NaN              NaN         2022-01-01 00:00:00         2022-01-06 00:00:00              NaN          NaN    51.000000   10.840000          9.270000         0.000000        NaN
+25%          NaN              NaN         2022-07-02 00:00:00         2022-07-19 18:00:00              NaN          NaN   615.000000   33.290000         30.460000        26.000000        NaN
+50%          NaN              NaN         2022-12-24 00:00:00         2023-01-19 12:00:00              NaN          NaN  1075.000000   58.950000         53.800000        49.000000        NaN
+75%          NaN              NaN         2023-07-07 00:00:00         2023-07-18 00:00:00              NaN          NaN  1548.000000   83.130000         76.550000       100.000000        NaN
+max          NaN              NaN         2024-01-01 00:00:00         2024-01-12 00:00:00              NaN          NaN  5000.000000  109.170000        107.390000       321.000000        NaN
+std          NaN              NaN                         NaN                         NaN              NaN          NaN   647.844551   28.101315         26.094930        69.187870        NaN
+
+Status / Delivery Date:
+Delivery_Date        False  True  All
+Order_Status                         
+Cancelled               55     8   63
+Delivered              492    68  560
+Partially Delivered     68     5   73
+Pending                 75     6   81
+All                    690    87  777
